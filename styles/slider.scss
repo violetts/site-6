@@ -1,0 +1,36 @@
+.slider {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 30px);
+    
+    &_previous {
+        left: 0;
+        
+        & .slider__icon {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 7px 10px;
+        }
+    }
+    
+    &_next {
+        right: 0;
+        
+        & .slider__icon {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding: 7px 15px;
+        }
+    }
+    
+    &__icon {
+        color: $color-white;
+        font-size: $font-size-huger;
+        background: $color-red;
+        line-height: 40px;
+        width: 50px;
+        height: 57px;
+        box-sizing: border-box;
+    }
+}
+

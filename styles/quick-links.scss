@@ -1,0 +1,12 @@
+.quick-links {
+    
+    &__item {
+        text-decoration: none;
+        color: $color-grey-dd;
+        font-size: $font-size-small;
+        
+        &:hover {
+            color: $color-red;
+        }
+    }
+}

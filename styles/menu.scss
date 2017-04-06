@@ -1,0 +1,74 @@
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    &__item {
+        list-style: none;
+        
+        &_portfolio {
+            position: relative;
+            
+            &:hover .submenu {
+                opacity: 1;
+                z-index: 1;
+            }
+        }
+        
+        &-search {
+            line-height: 30px;
+            padding: 0 15px;
+        }
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+        font-size: $font-size-base;
+        text-transform: uppercase;
+        display: inline-block;
+        height: 30px;
+        line-height: 32px;
+        padding: 0 15px;
+        
+        &:hover {
+            background: $color-red-light;
+            border-radius: 5px;
+            border-bottom: 3px solid $color-red;
+        }
+        
+        &_active {
+            background: $color-green-d;
+            border-radius: 5px;
+            border-bottom: 3px solid $color-green-dd;
+            
+            &:hover {
+                background: #62b9b0;
+                border-top: 3px solid $color-green-dd;
+                border-bottom: 0;
+            }
+        }
+        
+        &_inactive {
+            background: $color-grey-d;
+            border-radius: 5px;
+            border-bottom: 3px solid $color-grey-dd;
+        }
+        
+        &_portfolio {
+            position: relative;
+        }
+    }
+    
+    &__icon {
+        padding-right: 3px;
+        color: $color-white;
+    }
+}
+
+
+
+

@@ -1,0 +1,30 @@
+.menu-switcher {
+    justify-content: flex-start;
+    
+    & .menu__item + .menu__item{
+        margin-left: 10px;
+    }
+    
+    & .menu__link {
+        background: $color-grey-dd;
+        border-radius: 5px;
+        border-bottom: 3px solid $color-black;
+        
+        &_active {
+            background: $color-green;
+            border-bottom: 3px solid $color-green-dd;
+            
+            &:hover {
+                background: #62b9b0 !important;
+                border-top: 3px solid #528b86;
+                border-bottom: 0 !important;
+            }
+        }
+        
+        &:hover {
+            background: #e5655d;
+            border-radius: 5px;
+            border-bottom: 3px solid #e2534b;
+        }
+    }
+}

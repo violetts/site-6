@@ -1,0 +1,14 @@
+.logo {
+    color: $color-white;
+    flex: 1;
+    
+    &__word {
+        font-size: $font-size-huge;
+        font-weight: bolder;
+        text-transform: uppercase;
+        
+        &_smaller {
+            font-size: $font-size-bigger;
+        }
+    }
+}

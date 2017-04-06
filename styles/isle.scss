@@ -1,0 +1,52 @@
+.isle {
+    flex: 1;
+    border-radius: 5px;
+    background: $color-faded;
+    text-align: center;
+    border-bottom: 4px solid $color-grey-light;
+    position: relative;
+    
+    &:hover {
+         background: $color-white;
+        
+        & .isle__button {
+            background: $color-red-light;
+            border-bottom: 4px solid $color-red;
+        }
+        
+        & .isle__icon {
+            color: $color-red;
+        }
+    }
+    
+    &_theme {
+        padding: 55px 20px 70px;
+    }
+    
+    &_white {
+        color: $color-white;
+    }
+    
+    &__icon {
+        font-size: 56px;
+        margin: 0 0 18px;
+        color: $color-green;
+    }
+    
+    & + & {
+        margin-left: 30px;
+    }
+    
+    &__button {
+        background: $color-green;
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        bottom: calc(100% - 108%);
+        left: calc(100% - 80%);
+        max-width: 200px;
+        border-bottom: 4px solid $color-green-d;
+    }
+}
+
+

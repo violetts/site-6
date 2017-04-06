@@ -1,0 +1,63 @@
+.browsers {
+    position: relative;
+    
+    &__description {
+        text-align: center
+    }
+    
+    &__items {
+        position: relative;
+        margin: 20px 0;
+    }
+    
+    &__item {
+        border: 5px solid $color-grey-normal;
+        border-radius: 10px;
+        display: inline-block;
+        background: $color-grey-normal;
+        overflow: hidden;
+        width: 500px;
+        position: absolute;
+        z-index: 0;
+        vertical-align: top;
+        box-sizing: border-box;
+        line-height: 0;
+        border-top-width: 40px;
+        
+        &_main {
+            width: 570px;
+            height: 360px;
+            position: relative;
+            z-index: 1;
+            left: calc(100% - 75%);
+        }
+        
+        &_left {
+            left: 0;
+            top: 10%;
+        }
+        
+        &_right {
+            right: 0;
+            top: 10%;
+        }
+    }
+    
+    &__img {
+        width: 100%;
+    }
+    
+    &__buttons {
+        position: absolute;
+        z-index: 2;
+        top: 40px;
+        display: flex;
+    }
+    
+    &__button {
+        width: 10px;
+        height: 10px;
+        color: $color-white;
+        border-radius: 50%;
+    }
+}

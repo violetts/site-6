@@ -1,0 +1,31 @@
+.blockquote {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+    &__quote {
+        background: $color-white;
+        padding: 8px;    
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+    
+    &__triangle {
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-right: 20px solid #fff;
+        top: 100%;
+        right: calc(100% - 40px);
+    }
+    
+    &__footer {
+        margin: 0;
+        position: absolute;
+        top: calc(100% + 10px);
+        right: calc(100% - 120px);
+    }
+}

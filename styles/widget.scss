@@ -1,0 +1,22 @@
+.widget {
+    display: flex;
+    align-content: space-between;
+    padding: 0;
+    
+    &__item {
+        list-style: none;
+        
+        &_left {
+            width: 70px;
+            height: 70px;
+            border: 1px solid $color-green;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+    }
+    
+    &__img {
+        width: 100%;
+    }
+}

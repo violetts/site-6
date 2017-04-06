@@ -1,0 +1,16 @@
+.inquiry {
+    display: flex;
+    justify-content: space-between;
+    
+    &__form {
+        width: 700px;
+    }
+    
+    &__contactus {
+        width: 300px;
+    }
+    
+    .title {
+        margin: 0 0 40px;
+    }
+}

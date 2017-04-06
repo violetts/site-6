@@ -1,0 +1,44 @@
+.section {
+    padding: 50px 0;
+    
+    &__portfolio-single {
+        margin:60px 0;
+    }
+
+    &_bgr_promo {
+        background: url(../img/promo-bgr.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $color-grey-dd;
+        padding: 140px 0 175px;
+        position: relative;
+        z-index: -1;
+    }
+
+    &_bgr_grey {
+        background-color: $color-grey;
+    }
+
+    &_bgr_grey-dark {
+        background-color: $color-grey-d; 
+    }
+
+    
+    &.section_bgr_grey-dark:nth-child(1) {
+        background-color: #ececec;
+        padding: 0;
+    }
+
+    &__tagline {
+        text-align: center;
+    }
+    
+    &__title {
+        font-size: $font-size-huge;
+    }
+    
+    &__copy {
+        font-size: $font-size-base;
+    }
+    
+}

@@ -1,0 +1,35 @@
+.contactus {
+    
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        
+        & + & {
+            margin-top: 20px;
+        }
+    }
+    
+    &__icon {
+        width: 30px;
+        
+        &_red {
+            color: $color-red;
+        }
+        
+        &_big {
+            font-size: 30px;
+        }
+    }
+    
+    &__link {
+        
+        &_red {
+            color: $color-red;
+        }
+    }
+    
+    &__copy {
+        flex: 1;
+        color: $color-turquose;
+    }
+}

@@ -1,0 +1,29 @@
+.bullet {
+    
+    &__item {
+        flex: 1;
+    
+        &_center {
+            flex: 3;
+            padding: 0 40px;
+        }
+    }
+    
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    &__icon {
+        color: $color-red-light;
+        font-size: $font-size-base;
+    }
+    
+    &__title {
+        font-size: $font-size-medium;
+        font-weight: 800;
+        color: $color-grey-dd;
+        margin: 0 0 20px;
+    }
+}

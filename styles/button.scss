@@ -1,0 +1,31 @@
+.button {
+    height: 50px;
+    padding: 18px 45px;
+    color: $color-white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 0;
+    
+    
+    &_red {
+        background: $color-red-light;
+        border-bottom: 3px solid $color-red;
+        
+        &:hover {
+            background: $color-red;
+        }
+    }
+    
+    &_green {
+        background: $color-green;
+        border-bottom: 3px solid $color-green-d;
+        
+        &:hover {
+            background: $color-green-d;
+        }
+    }
+}
+
+
+
+

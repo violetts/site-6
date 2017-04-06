@@ -1,0 +1,28 @@
+.legend {
+    margin: 10px 0 0;
+    display: block;
+    text-align: center;
+    
+    
+     &__number {
+        font-size: 40px;    
+        color: $color-grey-dd;
+        font-weight: 800;
+         display: block;
+         
+    }
+    
+    &__title {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $color-grey-dd;
+        font-weight: 800;
+        background: $color-grey;
+        padding: 10px 0 0;
+        display: block;
+    }
+    
+    &:first-child {
+        position: relative;
+    }
+}

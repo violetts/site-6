@@ -1,0 +1,41 @@
+.form {
+    
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        
+        & + & {
+            margin-top: 25px;
+        }
+    }
+    
+    &__label {
+        width: 25%;
+        min-width: 100px;
+        align-self: center;
+        color: $color-turquose;
+    }
+    
+    &__input {
+        flex: 1;
+        height: 40px;
+        border-radius: 3px;
+        border: 0;
+        max-width: 470px;
+        background-color: $color-grey-d;
+        border-top: 2px solid $color-grey-normal;
+    }
+    
+    &__textarea {
+        border-radius: 3px;
+        border: 0;
+        resize: vertical;
+        flex: 1;
+        background-color: $color-grey-d;
+        border-top: 2px solid $color-grey-normal;
+    }
+    
+    .button {
+        text-transform: uppercase;
+    }
+}

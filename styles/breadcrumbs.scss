@@ -1,0 +1,25 @@
+.breadcrumbs {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+    padding: 20px 0;
+    
+    &__triangle {
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $color-grey-d;
+        top: 100%;
+    }
+    
+    &__title {
+        margin: 0;
+        font-size: $font-size-big;
+        text-transform: uppercase;
+        color: $color-grey-dd;
+    }
+}

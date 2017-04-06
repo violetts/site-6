@@ -1,0 +1,16 @@
+.portfolio-desc {
+    display: flex;
+    justify-content: space-between;
+    
+    &__descript {
+        width: 770px;
+    }
+    
+    &__details {
+        width: 270px;
+    }
+    
+    & .copy {
+        margin-top: 20px;
+    }
+}

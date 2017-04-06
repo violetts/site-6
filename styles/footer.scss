@@ -1,0 +1,54 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: $color-white;
+    align-items: baseline;
+    
+    &__title {
+        font-size: $font-size-big;
+        
+        & span {
+            text-transform: uppercase;
+        }
+    }
+    
+    &__item {
+        width: 33.33%;
+        
+        &:nth-child(2),
+        &:nth-child(3) {
+           width: 20%; 
+        }
+    }
+    
+    &__links {
+        list-style: none;
+        padding: 0 15px;
+    }
+    
+    &__link {
+        position: relative;
+        display: block;
+        color:  $color-white;
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    &__icon {
+        padding: 0 5px;
+    }
+    
+    &__copy {
+        font-size: $font-size-base;
+        line-height: 23px;
+    }
+    
+    &__contact {
+        font-size: $font-size-big;
+        font-style: italic;
+        font-weight: 600;
+    }
+}

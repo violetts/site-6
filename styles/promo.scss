@@ -1,0 +1,21 @@
+.promo {
+    border: 1px solid $color-grey-d;
+    border-radius: 5px;
+    background: $color-grey-d;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 45px;
+    
+    &__title {
+        font-size: $font-size-huge;
+        color: $color-grey-dd;
+        margin: 0;
+    }
+    
+    & .button {
+        text-transform: uppercase;
+    }
+}
+

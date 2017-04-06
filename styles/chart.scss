@@ -1,0 +1,22 @@
+.chart {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+    
+    &__items {
+        position: relative;
+        border: 15px solid tomato;
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+        border-bottom: 0;
+        height: 55px;
+        width: 100px;
+        
+        &:first-child .legend__title {
+            position: relative;
+            left: -12px;
+        }
+    }
+}

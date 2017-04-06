@@ -1,0 +1,12 @@
+.social {
+    
+    &__item {
+        color: $color-white;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+    
+    &__icon {
+        font-size: 24px;
+    }
+}
