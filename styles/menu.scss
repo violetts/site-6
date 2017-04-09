@@ -1,26 +1,24 @@
 .menu {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    
+    &__items {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
     
     &__item {
         list-style: none;
-        
-        &_portfolio {
-            position: relative;
-            
-            &:hover .submenu {
-                opacity: 1;
-                z-index: 1;
-            }
-        }
-        
-        &-search {
-            line-height: 30px;
-            padding: 0 15px;
+    }
+    
+    &__dropdown {
+        position: relative;
+
+        &:hover .submenu {
+            opacity: 1;
+            z-index: 1;
         }
     }
     
@@ -45,7 +43,7 @@
             border-radius: 5px;
             border-bottom: 3px solid $color-green-dd;
             
-            &:hover {
+            &:active {
                 background: #62b9b0;
                 border-top: 3px solid $color-green-dd;
                 border-bottom: 0;
@@ -57,11 +55,11 @@
             border-radius: 5px;
             border-bottom: 3px solid $color-grey-dd;
         }
-        
-        &_portfolio {
+    }
+    
+    &__link-dropdown {
             position: relative;
         }
-    }
     
     &__icon {
         padding-right: 3px;

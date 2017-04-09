@@ -1,0 +1,13 @@
+.promo-major {
+    background: url(../img/promo-bgr.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $color-grey-dd;
+        padding: 140px 0 175px;
+        position: relative;
+        z-index: -1;
+    
+    &__tagline {
+        text-align: center;
+    }
+}

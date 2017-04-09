@@ -12,38 +12,42 @@
             <div class="container">
                 <div class="header">
                     <div class="logo">
-                        <span class="logo__word">modus</span>
-                        <span class="logo__word_smaller">versus</span>
+                        <span class="logo__first-word">modus</span>
+                        <span class="logo__second-word">versus</span>
                     </div>
-                    <ul class="menu">
-                        <li class="menu__item"><a class="menu__link menu__link_active" href="/index.html">home</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">about </a></li>
-                        <li class="menu__item"><a class="menu__link"  href="#">services</a></li>
-                        <li class="menu__item menu__item_portfolio">
-                            <a class="menu__link menu__link_portfolio" href="#">
-                            <i class="menu__icon fa fa-angle-down" aria-hidden="true"></i> portfolio
-                            </a>
-                            <ul class="submenu">
-                                <span class="submenu__triangle"></span>
-                                <li class="submenu__item"><a class="submenu__link" href="portfolio-single.html">Portfolio column page</a></li>
-                                <li class="submenu__item"><a class="submenu__link" href="/portfolio.html">Portfolio 4 column page</a></li>
-                                <li class="submenu__item"><a class="submenu__link" href="#">Portfolio 2 column page</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu__item"><a class="menu__link" href="#">blog</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">features</a></li>
-                        <li class="menu__item"><a class="menu__link menu__link_active" href="contacts.html">contacts</a></li>
-                        <li class="menu__item menu__item-search">
-                            <i class="menu__icon fa fa-search" aria-hidden="true"></i>
-                        </li>
-                    </ul>
+                    <nav class="menu">
+                        <ul class="menu__items">
+                            <li class="menu__item"><a class="menu__link menu__link_active" href="#">home</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">about </a></li>
+                            <li class="menu__item"><a class="menu__link"  href="#">services</a></li>
+                            <li class="menu__item menu__dropdown">
+                                <a class="menu__link menu__link-dropdown" href="#">
+                                <i class="menu__icon fa fa-angle-down" aria-hidden="true"></i> portfolio
+                                </a>
+                                <div class="submenu">
+                                    <span class="submenu__triangle"></span>
+                                    <ul class="submenu__items">
+                                        <li class="submenu__item"><a class="submenu__link" href="portfolio-single.html">Portfolio column page</a></li>
+                                        <li class="submenu__item"><a class="submenu__link" href="/portfolio.html">Portfolio 4 column page</a></li>
+                                        <li class="submenu__item"><a class="submenu__link" href="#">Portfolio 2 column page</a></li>
+                                    </ul>
+                                </div>    
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">blog</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">features</a></li>
+                            <li class="menu__item"><a class="menu__link menu__link_active" href="contacts.html">contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <i class="search__icon fa fa-search" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
         </header>
-        <main class="page__content">
-            <section class="section section_bgr_promo">
+        <section class="promo-major">
                 <div class="container">
-                    <div class="section__tagline">
+                    <div class="promo-major__tagline">
                         <div class="tagline">
                             <p class="tagline__title">Vestibulum</p>
                             <p class='tagline__subtitle'>Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
@@ -51,7 +55,8 @@
                     </div>
                 </div>
             </section>
-            <section class="section section_bgr_grey">
+        <main class="page__content">
+            <section class="section">
                 <div class="container">
                     <div class="promo">
                         <div class="promo__desc">
@@ -136,7 +141,7 @@
                     </div>
                 </div>
             </section>
-            <div class="section section_bgr_grey">
+            <div class="section">
                 <div class="container">
                     <div class="about">
                         <div class="about__bullet-items">
@@ -261,8 +266,8 @@
                         <div class="footer__item">
                             <div class="footer__header">
                                 <div class="logo">
-                                    <span class="logo__word">modus</span>
-                                    <span class="logo__word_smaller">versus</span>
+                                    <span class="logo__first-word">modus</span>
+                                    <span class="logo__second-word">versus</span>
                                 </div>
                             </div>
                             <p class="footer__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .</p>

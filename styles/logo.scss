@@ -2,13 +2,13 @@
     color: $color-white;
     flex: 1;
     
-    &__word {
+    &__first-word {
         font-size: $font-size-huge;
         font-weight: bolder;
         text-transform: uppercase;
-        
-        &_smaller {
+    }
+    
+    &__second-word {
             font-size: $font-size-bigger;
         }
-    }
 }

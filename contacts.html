@@ -12,31 +12,36 @@
             <div class="container">
                 <div class="header">
                     <div class="logo">
-                        <span class="logo__word">modus</span>
-                        <span class="logo__word_smaller">versus</span>
+                        <span class="logo__first-word">modus</span>
+                        <span class="logo__second-word">versus</span>
                     </div>
-                    <ul class="menu">
-                        <li class="menu__item"><a class="menu__link" href="index.html">home</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">about </a></li>
-                        <li class="menu__item"><a class="menu__link"  href="#">services</a></li>
-                        <li class="menu__item menu__item_portfolio">
-                            <a class="menu__link" href="#">
-                            <i class="menu__icon fa fa-angle-down" aria-hidden="true"></i> portfolio
-                            </a>
-                            <ul class="submenu">
-                                <span class="submenu__triangle"></span>
-                                <li class="submenu__item"><a class="submenu__link" href="portfolio-single.html">Portfolio column page</a></li>
-                                <li class="submenu__item"><a class="submenu__link" href="portfolio.html">Portfolio 4 column page</a></li>
-                                <li class="submenu__item"><a class="submenu__link" href="#">Portfolio column page</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu__item"><a class="menu__link" href="#">blog</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">features</a></li>
-                        <li class="menu__item"><a class="menu__link menu__link_active" href="#">contacts</a></li>
-                        <li class="menu__item menu__item-search">
-                            <i class="menu__icon fa fa-search" aria-hidden="true"></i>
-                        </li>
-                    </ul>
+                    <nav class="menu">
+                        <ul class="menu__items">
+                            <li class="menu__item"><a class="menu__link menu__link_active" href="index.html">home</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">about </a></li>
+                            <li class="menu__item"><a class="menu__link"  href="#">services</a></li>
+                            <li class="menu__item menu__dropdown">
+                                <a class="menu__link menu__link-dropdown" href="#">
+                                <i class="menu__icon fa fa-angle-down" aria-hidden="true"></i> portfolio
+                                </a>
+                                <div class="submenu">
+                                    <span class="submenu__triangle"></span>
+                                    <ul class="submenu__items">
+                                        <li class="submenu__item"><a class="submenu__link" href="portfolio-single.html">Portfolio column page</a></li>
+                                        <li class="submenu__item"><a class="submenu__link" href="/portfolio.html">Portfolio 4 column page</a></li>
+                                        <li class="submenu__item"><a class="submenu__link" href="#">Portfolio 2 column page</a></li>
+                                    </ul>
+                                </div>    
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">blog</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">features</a></li>
+                            <li class="menu__item"><a class="menu__link menu__link_active" href="contacts.html">contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <i class="search__icon fa fa-search" aria-hidden="true"></i>
+                    </div>   
                 </div>
             </div>
         </header>
@@ -57,7 +62,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section_bgr_grey">
+            <section class="section">
                 <div class="container">
                     <div class="map">
                         <iframe class="map__map-view" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6049.108903959407!2d-74.00035092504129!3d40.70580931733012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2343ce7b2b%3A0x2526ddba7abd465c!2z0JHRgNGD0LrQu9C40L3RgdC60LjQuSDQvNC-0YHRgg!5e0!3m2!1sru!2sru!4v1487440395399" allowfullscreen></iframe>

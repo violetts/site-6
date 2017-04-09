@@ -1,22 +1,37 @@
 .submenu {
+    position: relative;
     opacity:0;   
     -webkit-transition:.5s;
     -moz-transition:.5s;
     -o-transition:.5s;
     -ms-transition:.5s;
     transition:.5s;
-    list-style:none;
-    background: $color-red;
-    border: 3px solid $color-red;
-    border-radius: 5px;
-    padding: 0;
-    position: absolute;
-    top: 50px;
-    text-align: center;
-    z-index: -1;
+     &:hover {
+            display: block;
+        }
     
-    &:hover {
-        display: block;
+     &__triangle {
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-bottom: 10px solid $color-red;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        bottom: -10px;
+        left: 10px;
+    }
+
+    &__items {
+        list-style:none;
+        background: $color-red;
+        border: 3px solid $color-red;
+        border-radius: 5px;
+        padding: 0;
+        position: absolute;
+        top: 10px;
+        text-align: left;
+        z-index: -1;
     }
     
     &__item {
@@ -41,17 +56,5 @@
         &:hover {
             background: $color-green;
         }
-    }
-    
-    &__triangle {
-        position: absolute;
-        display: inline-block;
-        width: 0;
-        height: 0;
-        border-bottom: 10px solid $color-red;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        bottom: calc(100% + 3px);
-        right: calc(100% - 30px);
     }
 }
